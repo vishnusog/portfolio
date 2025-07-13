@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MeLogo } from "../../assets";
-import MiniScroller from "../../components/MiniScroller";
+import Scroller from "../../components/Scroller";
 
 function Home() {
   return (
-    <section className="container mx-auto px-5 py-20 flex flex-col md:flex-row justify-center gap-8 ">
+    <div>
+      <section className="container mx-auto px-5 py-20 flex flex-col md:flex-row justify-center gap-8 ">
       <div className=" flex-1 flex flex-col justify-center">
         <h2 className="text-lg md:text-xl font-bold uppercase ">
           Hi 👋 I am Vishnu_R
@@ -56,6 +57,8 @@ function Home() {
         />
       </div>
     </section>
+    <Scroller/>
+    </div>
   );
 }
 

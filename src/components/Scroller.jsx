@@ -1,7 +1,8 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
+import { Link } from 'react-router-dom';
 
-function MiniScroller() {
+function Scroller() {
   return (
     <section>
       <Marquee className="py-2 items-center" pauseOnHover gradient={false}>
@@ -13,4 +14,4 @@ function MiniScroller() {
   )
 }
 
-export default MiniScroller
+export default Scroller;
