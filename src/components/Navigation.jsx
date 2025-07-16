@@ -6,6 +6,7 @@ const activeClassName = "text-amber-400";
 
 function Navigation() {
   return (
+    
     <nav
       className="container mx-auto  flex flex-col md:flex md:justify-between md:items-center md:flex-row justify-center items-center p-4 border-black border-b-2 "
       aria-label="Main Navigation"
