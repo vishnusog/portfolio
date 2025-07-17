@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MeLogo, mePic_1 } from "../../assets";
+import { MeLogo, mePic_1, mePic_2, mePic_3 } from "../../assets";
 import Scroller from "../../components/Scroller";
 
 function Home() {
@@ -14,11 +14,11 @@ function Home() {
           </h1>
           <p>
             I craft clean user interfaces and build modern web apps with React,
-            vite.js, and Tailwind CSS.
+            Vite.js, and Tailwind CSS.
           </p>
           <div className="gap-8 flex items-center mt-5">
             <Link
-              to=""
+              to="/work"
               className=" bg-cyan-500 px-6 py-2 rounded-md text-white text-lg border-cyan-500 shadow-lg shadow-cyan-500/50  hover:bg-amber-500 hover:shadow-lg hover:shadow-amber-500/50 hover:border-none hover:inset-shadow-amber-700 ease-in-out duration-75 font-bold"
             >
               Work
@@ -56,14 +56,14 @@ function Home() {
         </div>
       </section>
       <Scroller />
-      <section className="px-5 py-20 container mx-auto">
+      <section className="px-5 py-15 container mx-auto">
         <h1 className="uppercase"> About me _</h1>
-        <div className="mt-15 flex gap-50 justify-center items-center ">
-          <img src={mePic_1} alt="Vishnu R" width="400" className="" />
+        <div className="mt-15 flex  items-center">
+          <img src={mePic_3} alt="Vishnu R" width="750" className="-ml-30 " />
           <div className="flex flex-col gap-8">
             <p className="mt-4 text-lg ">
               I design intuitive interfaces and develop responsive, scalable web
-              applications using modern tools like React, Next.js, and Tailwind
+              applications using modern tools like React, Vite.js, and Tailwind
               CSS. With a strong eye for design and detail, I bridge the gap
               between user experience and engineering.
             </p>
@@ -75,7 +75,7 @@ function Home() {
             <div>
               <Link
                 to="/about"
-                className=" px-6 py-2 rounded-md  text-lg shadow-cyan-500/50 hover:bg-amber-500 hover:shadow-lg hover:shadow-amber-500/50 hover:border-none hover:inset-shadow-amber-700 ease-in-out duration-75"
+                className="p-2 text-lg text-white rounded-md bg-cyan-500 border-cyan-500 shadow-lg shadow-cyan-500/50  hover:bg-amber-500 hover:shadow-lg hover:shadow-amber-500/50 hover:border-none hover:inset-shadow-amber-700 ease-in-out duration-75 hover:text-white"
               >
                 Read more →
               </Link>
