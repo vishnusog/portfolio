@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { bgPic, Vlogo } from "../assets";
 
-const activeClassName = "text-amber-400";
+const activeClassName = "text-teal-700";
 
 function Navigation() {
   return (
@@ -47,6 +47,16 @@ function Navigation() {
               }
             >
               Work
+            </NavLink>
+          </li>
+            <li>
+            <NavLink
+              to="/work"
+              className={({ isActive }) =>
+                isActive ? activeClassName : undefined
+              }
+            >
+              Contact
             </NavLink>
           </li>
         </ul>
