@@ -1,19 +1,43 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { MeLogo, mePic_3 } from "../../assets";
 import Scroller from "../../components/Scroller";
+import { gsap } from "gsap";
 
 function Home() {
+  const h1Ref = useRef(null);
+  const h2Ref = useRef(null);
+  const pRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      h1Ref.current,
+      { opacity: 0, x: -300 },
+      { opacity: 1, duration: 1, delay: 0.3, x: 0 }
+    );
+
+    // gsap.fromTo(
+    //   h2Ref.current,
+    //   { opacity: 0 },
+    //   { opacity: 1, duration: 1, delay: 1.5, ease: "power2.out" }
+    // );
+    // gsap.fromTo(
+    //   pRef.current,
+    //   { opacity: 0,x: -300 },
+    //   { opacity: 1, duration: 1, delay: 0.9, x: 0 }
+    // );
+  }, []);
+
   return (
     <div>
       <section className="container mx-auto px-5 py-20 flex flex-col md:flex-row justify-center gap-8 ">
-        <div className=" flex-1 flex flex-col justify-center">
+        <div ref={h1Ref} className=" flex-1 flex flex-col justify-center">
           <h2 className="md:text-xl uppercase ">Vishnu R _</h2>
           <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-5 mt-2 uppercase">
             UI/UX Design Developer_<span className="text-rose-700">.</span>
           </h1>
-          <p>
+          <p ref={pRef}>
             I craft clean user interfaces and build modern web apps with React,
             Vite.js, and Tailwind CSS.
           </p>
@@ -64,19 +88,16 @@ function Home() {
         </h1>
         <div className="mt-1 flex flex-col lg:flex-col gap-10 items-center  2xl:flex-row  ">
           <img src={mePic_3} alt="Vishnu R" width="750" className="mt-10" />
-          <div className="flex flex-col gap-8 p-1">
-            <p className="mt-4 md:text-lg ">
-              I design intuitive interfaces and develop responsive, scalable web
-              applications using modern tools like React, Vite.js, and Tailwind
-              CSS. With a strong eye for design and detail, I bridge the gap
-              between user experience and engineering.
+          <div className="flex flex-col gap-5 p-1">
+            <p className="mt-4 text-lg md:text-2xl ">
+              I craft sleek, user-friendly interfaces and build fast, responsive
+              web apps using modern tools like React, Vite.js, and Tailwind CSS.
             </p>
-            <p>
-              🛠️ I also explore cybersecurity platforms like TryHackMe to better
-              understand secure web practices.
+            <p className="">
+              With a strong sense of design and attention to detail, I merge
+              creativity with code to deliver meaningful digital experiences.
             </p>
-            <p>👉 Let’s build something impactful together.</p>
-            <div>
+            <div className="mt-5">
               <Link
                 to="/about"
                 className="p-2 text-lg text-white rounded-md bg-cyan-500 border-cyan-500 shadow-lg shadow-cyan-500/50  hover:bg-amber-500 hover:shadow-lg hover:shadow-amber-500/50 hover:border-none hover:inset-shadow-amber-700 ease-in-out duration-75 hover:text-white"

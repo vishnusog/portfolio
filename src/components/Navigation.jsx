@@ -51,12 +51,12 @@ function Navigation() {
           </li>
             <li>
             <NavLink
-              to="/work"
+              to="/blog"
               className={({ isActive }) =>
                 isActive ? activeClassName : undefined
               }
             >
-              Contact
+              Blog
             </NavLink>
           </li>
         </ul>
