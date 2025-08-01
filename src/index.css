@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Unbounded:wght@300&display=swap');
 @import "tailwindcss";
 
-*{
-  opacity: 1;
-}
+
 body {
   font-family: "Unbounded", sans-serif;
   background-color: aliceblue;
@@ -20,4 +18,22 @@ body {
 html {
   @apply scroll-smooth;
 
+}
+
+.noise {
+  background-image: url('./assets/noise.png');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.borderBox {
+  width: 31rem;
+  border-radius: 10px;
+  padding: 11px;
+  background-size: 15rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* border-bottom:  2px solid; */
 }

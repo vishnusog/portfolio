@@ -11,7 +11,7 @@ function Navigation() {
         <img src={bgPic} alt="Background Pic" className="w-full" />
       </div> */}
       <nav
-        className="container mx-auto  flex flex-col md:flex md:justify-between md:items-center md:flex-row justify-center items-center p-4 border-gray-400 border-b-2 "
+        className="container mx-auto  flex flex-col md:flex md:justify-between md:items-center md:flex-row justify-center items-center p-4 border-gray-400 border-b-2"
         aria-label="Main Navigation"
       >
         <Link to="/" className=" font-bold  text-lg   ml-2 flex items-center">
