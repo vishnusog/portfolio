@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Scroller() {
   return (
-    <section>
+    <section className="-mt-30">
       <Marquee className="py-2 items-center  bg-teal-500" pauseOnHover gradient={false}>
         <Link to="/contact" className="mr-[5rem] flex  gap-10 text-white">
           <p>Let's get work!</p> <p>Have a project in mind?</p>
