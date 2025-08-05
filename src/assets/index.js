@@ -8,6 +8,8 @@ import NerveDigital from './Brand11.png'
 import p1 from './Portfolio-1.jpg'
 import ui from './UI.svg'
 import line from './lines.svg'
+import motionGraphic from './motionGraphic.svg'
+import graphicDesign from './graphicDesign.svg'
 
 
 export {
@@ -20,5 +22,7 @@ export {
     NerveDigital,
     p1,
     ui,
-    line
+    line,
+    motionGraphic,
+    graphicDesign
 }
