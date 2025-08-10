@@ -10,6 +10,7 @@ import ui from './UI.svg'
 import line from './lines.svg'
 import motionGraphic from './motionGraphic.svg'
 import graphicDesign from './graphicDesign.svg'
+import vishnu from './vishnu.jpg'
 
 
 export {
@@ -24,5 +25,6 @@ export {
     ui,
     line,
     motionGraphic,
-    graphicDesign
+    graphicDesign,
+    vishnu
 }

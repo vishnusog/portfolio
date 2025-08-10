@@ -7,9 +7,9 @@ const activeClassName = "text-teal-700";
 function Navigation() {
   return (
     <>
-      {/* <div className="fixed right-0 top-0 -z-10 translate-y-[-70%]">
+      <div className="fixed right-0 top-0 -z-10 translate-y-[-70%]">
         <img src={bgPic} alt="Background Pic" className="w-full" />
-      </div> */}
+      </div>
       <nav
         className="container mx-auto  flex flex-col md:flex md:justify-between md:items-center md:flex-row justify-center items-center p-4 border-gray-400 border-b-2"
         aria-label="Main Navigation"

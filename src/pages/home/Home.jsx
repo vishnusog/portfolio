@@ -33,7 +33,7 @@ function Home() {
   return (
     <>
       <section className="container mx-auto px-5 py-20 flex justify-center min-h-screen">
-        <div ref={h1Ref} className="flex flex-col justify-center">
+        <div ref={h1Ref} className="flex flex-col justify-center ">
           <h2 className="md:text-3xl font-bold uppercase ">Vishnu R _</h2>
           <h1 className="text-4xl lg:text-5xl xl:text-7xl font-semibold mb-5 mt-5 uppercase">
             UI/UX Design Developer_<span className="text-rose-700">.</span>
