@@ -90,7 +90,7 @@ function Footer() {
         </ul>
         <div>
           <h1 className="text-7xl">
-            <Link>Let's Connect</Link>
+            <Link to="/contact">Let's Connect</Link>
           </h1>
           <address> Thiruvananthapuram, Kerala </address>
         </div>

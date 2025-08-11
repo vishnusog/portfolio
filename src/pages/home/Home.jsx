@@ -104,7 +104,7 @@ function Home() {
         </div>
       </section>
       {/* cards */}
-      <section className="container mx-auto px-5 py-20 ">
+      <section className="container mx-auto px-5 py-20 " id="portfolio">
         <h1 className="text-4xl lg:text-5xl xl:text-3xl font-bold text-teal-500">
           Portfolio_
         </h1>

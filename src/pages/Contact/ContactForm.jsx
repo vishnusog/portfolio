@@ -67,6 +67,7 @@ function ContactForm() {
                 </label>
                 <input
                   name="Name"
+                  required
                   id="name"
                   type="name"
                   className="outline-0 border-gray-800 border-2 pl-2 bg-white p-1 drop-shadow-[10px_-5px_0_rgb(38,166,154)]"
@@ -78,6 +79,7 @@ function ContactForm() {
                 </label>
                 <input
                   name="Email ID"
+                  required
                   id="email"
                   type="email"
                   className="outline-0 border-gray-800 border-2 pl-2 bg-white p-1 drop-shadow-[10px_-5px_0_rgb(38,166,154)]"
@@ -88,6 +90,9 @@ function ContactForm() {
                   Your Message
                 </label>
                 <textarea
+                  rows="5"
+                  cols="30"
+                  required
                   name="message"
                   className="outline-0 border-gray-800 border-2 pl-2 bg-white drop-shadow-[10px_-5px_0_rgb(38,166,154)]"
                 />
