@@ -8,8 +8,6 @@ import { dataCollect } from "../../data";
 
 function Home() {
   const h1Ref = useRef(null);
-  const h2Ref = useRef(null);
-  const pRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
@@ -38,7 +36,7 @@ function Home() {
           <h1 className="text-4xl lg:text-5xl xl:text-7xl font-semibold mb-5 mt-5 uppercase">
             UI/UX Design Developer_<span className="text-rose-700">.</span>
           </h1>
-          <p ref={pRef} className="font-extralight ">
+          <p className="font-extralight ">
             I craft clean user interfaces and build modern web apps with React,
             Vite.js, and Tailwind CSS.
           </p>

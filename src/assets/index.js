@@ -11,6 +11,11 @@ import line from './lines.svg'
 import motionGraphic from './motionGraphic.svg'
 import graphicDesign from './graphicDesign.svg'
 import vishnu from './vishnu.jpg'
+import YouTube from './icons/youtube.svg'
+import Twitter from './icons/twitter.svg'
+import Github from './icons/github.svg'
+import Discourd from './icons/discourd.svg'
+
 
 
 export {
@@ -26,5 +31,9 @@ export {
     line,
     motionGraphic,
     graphicDesign,
-    vishnu
+    vishnu,
+    YouTube,
+    Twitter,
+    Github,
+    Discourd,
 }
